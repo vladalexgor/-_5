@@ -23,7 +23,7 @@ namespace Задание_5
                 Sum += array[i];
             }
             SA = Sum / n;
-            Console.WriteLine("Среднее арифметическое введенных чисел: Sср = {0}", SA);
+            Console.WriteLine("Среднее арифметическое введенных чисел: Sср = {0:f2}", SA);
             Console.WriteLine("Для завершения нажмите любую клавишу.");
             Console.ReadKey();
         }
