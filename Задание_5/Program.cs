@@ -13,17 +13,17 @@ namespace Задание_5
         {
             Console.WriteLine("Введите последовательно 7 чисел:");
             int n = 7;
-            double a = 0;
+            // Sum - сумма последовательности чисел, SA - среднее арифметическое введенных чисел.
             double Sum = 0;
             double SA = 0;
-            int[] array = new int [n];
+            double[] array = new double[n];
             for (int i = 0; i < n; i++)
             {
-                a = Convert.ToDouble(Console.ReadLine()); 
-                Sum = Sum + a;
+                array[i] = Convert.ToDouble(Console.ReadLine());
+                Sum += array[i];
             }
             SA = Sum / n;
-            Console.WriteLine("Среднее арифметическое введенных чисел: Sср = {0,2}", SA);
+            Console.WriteLine("Среднее арифметическое введенных чисел: Sср = {0}", SA);
             Console.WriteLine("Для завершения нажмите любую клавишу.");
             Console.ReadKey();
         }
